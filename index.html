@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>CrossLine Studio LLC</title>
+  <meta name="description" content="Official organization website for CrossLine Studio LLC, owner and operator of the Proply app." />
+
+  <style>
+    :root {
+      --border: #e6e6e6;
+      --text: #111;
+      --muted: #555;
+      --bg: #ffffff;
+      --card: #fafafa;
+      --radius: 14px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 20px 64px;
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 6px 12px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      font-size: 13px;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin: 0 0 12px;
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      line-height: 1.55;
+      margin: 0 0 14px;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+      margin-top: 32px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin: 0 0 10px;
+    }
+
+    a {
+      color: var(--text);
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 14px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <div class="pill">Official Organization Website</div>
+
+    <h1>CrossLine Studio LLC</h1>
+
+    <p class="muted">
+      This website is the official organization website for <strong>CrossLine Studio LLC</strong>,
+      a U.S. limited liability company that builds and operates consumer software products.
+    </p>
+
+    <div class="grid">
+      <section class="card">
+        <h2>Ownership & Brands</h2>
+        <p>
+          <strong>Proply</strong> is a mobile application and brand
+          fully owned and operated by <strong>CrossLine Studio LLC</strong>.
+        </p>
+        <p>
+          <strong>Cross Solutions LLC</strong> is an affiliated entity associated with
+          CrossLine Studio LLC. CrossLine Studio LLC maintains control over
+          Proply’s development, operations, and Apple Developer Program enrollment.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Contact</h2>
+        <p>
+          Support: <a href="mailto:support@crossline.studio">support@crossline.studio</a><br />
+          Business: <a href="mailto:hello@crossline.studio">hello@crossline.studio</a>
+        </p>
+        <p class="muted">
+          Please include “Proply” in the subject line for faster support.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Privacy</h2>
+        <p>
+          CrossLine Studio LLC respects user privacy. The Proply app may process
+          account information and usage data to provide functionality,
+          support subscriptions, improve performance, and prevent fraud.
+        </p>
+        <p class="muted">
+          We do not sell personal information. Users may request assistance
+          by emailing <a href="mailto:support@crossline.studio">support@crossline.studio</a>.
+        </p>
+      </section>
+    </div>
+
+    <footer>
+      © <span id="year"></span> CrossLine Studio LLC. All rights reserved.
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
